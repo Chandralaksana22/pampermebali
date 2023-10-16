@@ -1,0 +1,11 @@
+plugin:
+    name: 'pamperme.pampermereview::lang.plugin.name'
+    description: 'pamperme.pampermereview::lang.plugin.description'
+    author: pamperme
+    icon: oc-icon-star
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Review
+        url: pamperme/pampermereview/review
+        icon: icon-star

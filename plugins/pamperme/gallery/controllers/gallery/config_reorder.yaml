@@ -1,0 +1,4 @@
+title: Gallery
+modelClass: Pamperme\Gallery\Models\Gallery
+toolbar:
+    buttons: reorder_toolbar

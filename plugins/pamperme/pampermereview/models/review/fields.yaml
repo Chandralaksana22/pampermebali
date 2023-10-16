@@ -1,0 +1,25 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    description:
+        label: Description
+        size: tiny
+        span: left
+        type: textarea
+    rate:
+        label: Rating
+        span: right
+        type: text
+    poster:
+        label: 'File upload'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

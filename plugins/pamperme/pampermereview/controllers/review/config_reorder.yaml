@@ -1,0 +1,4 @@
+title: Review
+modelClass: Pamperme\PampermeReview\Models\Review
+toolbar:
+    buttons: reorder_toolbar

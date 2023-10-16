@@ -1,0 +1,102 @@
+<footer class="main-footer">
+    <div class="main-footer__bg" style="background-color: #f566a9;"></div>
+    <!-- /.main-footer__bg -->
+    <img src="{{'assets/images/shapes/footer-s-1-1.png'|theme}}" class="main-footer__shape-1" alt="kidearn">
+    <img src="{{'assets/images/shapes/footer-s-1-2.png'|theme}}" class="main-footer__shape-2" alt="kidearn">
+    <img src="{{'assets/images/shapes/footer-s-1-3.png'|theme}}" class="main-footer__shape-3" alt="kidearn">
+    <img src="{{'assets/images/shapes/footer-s-1-4.png'|theme}}" class="main-footer__shape-4" alt="kidearn">
+    <div class="main-footer__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <div class="footer-widget footer-widget--about">
+                        <!-- <a href="index.html" class="footer-widget__logo">
+                            <img src="http://www.pampermebali.com/images/logo-m.png" width="160"
+                                alt="Kidearn HTML Template">
+                        </a> -->
+                        <ul class="list-unstyled footer-widget__info">
+                            <li style="color: #ffffff">
+                                <i class="icon-location2 footer-widget__info__icon"></i>
+                                <a href="#">6391 Elgin St. Celina, Delaware 10299</a>
+                            </li>
+                            <li style="color: #ffffff">
+                                <i class="icon-call footer-widget__info__icon"></i>
+                                <a href="tel:3035550105">(303) 555-0105</a>
+                            </li>
+                            <li style="color: #ffffff">
+                                <i class="icon-email1 footer-widget__info__icon"></i>
+                                <a href="mailto:kidearn@envato.com">kidearn@envato.com</a>
+                            </li>
+                        </ul><!-- /.list-unstyled -->
+                        <div class="footer-widget__social">
+                            <a href="https://twitter.com">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                            <a href="https://facebook.com">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                            <a href="https://pinterest.com">
+                                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                            <a href="https://instagram.com">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </div><!-- /.footer-widget__social -->
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6 col-xl-2">
+                    <div class="footer-widget footer-widget--links">
+                        <h2 class="footer-widget__title" style="color: #ffffff">Links</h2>
+                        <!-- /.footer-widget__title -->
+                        <ul class="list-unstyled footer-widget__links">
+                            <li style="color: #ffffff"><a href="about.html">Admissions</a></li>
+                            <li style="color: #ffffff"><a href="programs.html">Programs</a></li>
+                        </ul><!-- /.list-unstyled footer-widget__links -->
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6 col-xl-2">
+                    <div class="footer-widget footer-widget--links-two">
+                        <h2 class="footer-widget__title" style="color: #ffffff">Explore</h2>
+                        <!-- /.footer-widget__title -->
+                        <ul class="list-unstyled footer-widget__links">
+                            <li style="color: #ffffff"><a href="about.html">About</a></li>
+                            <li style="color: #ffffff"><a href="blog-grid.html">Our News</a></li>
+                        </ul><!-- /.list-unstyled footer-widget__links -->
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="footer-widget footer-widget--gallery">
+                        <h2 class="footer-widget__title" style="color: #ffffff">Gallery</h2>
+                        <!-- /.footer-widget__title -->
+                        <ul class="list-unstyled footer-widget__gallery">
+                            {% for image in gallery[0].gallery %}
+                            <li style="color: #ffffff">
+                                <a class="img-popup" href="{{image.path}}">
+                                    <img src="{{image.path}}" alt="footer gallery" style="object-fit: cover;">
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul><!-- /.list-unstyled footer-widget__gallery -->
+
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-md-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.main-footer__top -->
+    <div class="main-footer__bottom">
+        <div class="container">
+            <div class="main-footer__bottom__inner" style="
+            padding-bottom: 10px;
+            padding-top: 0px;
+        ">
+                <p class="main-footer__copyright" style="color: #ffffff;">
+                    © Copyright <span class="dynamic-year">2023</span> by Kidearn HTML Template.
+                </p>
+            </div><!-- /.main-footer__inner -->
+        </div><!-- /.container -->
+    </div><!-- /.main-footer__bottom -->
+</footer>

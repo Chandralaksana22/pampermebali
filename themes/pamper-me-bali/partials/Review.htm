@@ -1,0 +1,60 @@
+<div class="testimonial-four__shape1 kidearn-splax"
+    data-para-options='{"orientation": "left", "scale": 1.3, "delay": ".6", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
+    <img src="{{'assets/images/shapes/testimonial-shape-7.png'|theme}}" alt="kidearn">
+</div>
+<div class="testimonial-four__shape2 kidearn-splax"
+    data-para-options='{"orientation": "right", "scale": 1.3, "delay": ".5", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
+    <img src="{{'assets/images/shapes/testimonial-shape-8.png'|theme}}" alt="kidearn">
+</div>
+<div class="testimonial-four__shape3 kidearn-splax"
+    data-para-options='{"orientation": "left", "scale": 1.3, "delay": ".6", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
+    <img src="{{'assets/images/shapes/testimonial-shape-9.png'|theme}}" alt="kidearn">
+</div>
+<div class="testimonial-four__shape4 kidearn-splax"
+    data-para-options='{"orientation": "right", "scale": 1.3, "delay": ".6", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
+    <img src="{{'assets/images/shapes/testimonial-shape-10.png'|theme}}" alt="kidearn">
+</div>
+<div class="container">
+    <div class="testimonial-four__area">
+        <div class="sec-title text-center">
+
+            <h6 class="sec-title__tagline">Testimonial</h6><!-- /.sec-title__tagline -->
+
+            <h3 class="sec-title__title">What our Customers says...</h3>
+            <!-- /.sec-title__title -->
+        </div><!-- /.sec-title -->
+        <div class="testimonial-four__carousel kidearn-owl__carousel owl-carousel owl-theme" data-owl-options='{
+          "items": 1,
+          "margin": 0,
+          "loop": true,
+          "smartSpeed": 700,
+          "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+          "nav": false,
+          "dots": true,
+          "autoplay": true
+      }'>
+            {% for review in review %}
+            <div class="item">
+                <div class="testimonial-four__item">
+                    <div class="testimonial-four__item__quote">
+                        {{review.description}}
+                    </div>
+                    <div class="testimonial-four__item__ratings">
+                        {% for i in 1..review.rate %}
+                        <svg class="text-yellow-300" style="width: 1rem;" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        {% endfor %}
+                    </div>
+                    <div class="testimonial-four__item__author">
+                        <img src="{{review.poster.path}}" alt="{{review.poster.path}}" style="object-fit: cover;" />
+                        <h5 class="testimonial-four__item__author__name">{{review.name}}</h5>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

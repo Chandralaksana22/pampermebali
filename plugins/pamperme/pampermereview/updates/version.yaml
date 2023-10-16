@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table pamperme_pampermereview_rate'
+    - builder_table_create_pamperme_pampermereview_rate.php
+1.0.3:
+    - 'Updated table pamperme_pampermereview_rate'
+    - builder_table_update_pamperme_pampermereview_rate.php

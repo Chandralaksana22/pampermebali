@@ -1,0 +1,11 @@
+plugin:
+    name: 'pamperme.gallery::lang.plugin.name'
+    description: 'pamperme.gallery::lang.plugin.description'
+    author: pamperme
+    icon: oc-icon-image
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Gallery
+        url: pamperme/gallery/gallery
+        icon: icon-image

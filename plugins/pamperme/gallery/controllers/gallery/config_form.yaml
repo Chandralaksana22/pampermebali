@@ -1,0 +1,10 @@
+name: Gallery
+form: $/pamperme/gallery/models/gallery/fields.yaml
+modelClass: Pamperme\Gallery\Models\Gallery
+defaultRedirect: pamperme/gallery/gallery
+create:
+    redirect: 'pamperme/gallery/gallery/update/:id'
+    redirectClose: pamperme/gallery/gallery
+update:
+    redirect: pamperme/gallery/gallery
+    redirectClose: pamperme/gallery/gallery

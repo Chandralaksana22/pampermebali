@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table pamperme_gallery_'
+    - builder_table_create_pamperme_gallery_.php

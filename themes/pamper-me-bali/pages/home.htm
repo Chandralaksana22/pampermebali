@@ -1,0 +1,168 @@
+title = "Home"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use pamperme\pampermereview\models\Review;
+use pamperme\gallery\models\Gallery;
+
+	function onStart()
+	{
+		date_default_timezone_set('Asia/Singapore');
+		$this['review'] = Review::get();
+        $this['gallery'] = Gallery::get();
+	}
+?>
+==
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url({{'assets/images/loader.png'|theme}});"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <!-- main-slider-start -->
+        {%partial 'HeroHome'%}
+        <section class="about-four" style="border-bottom: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
+                        <div class="about-four__image">
+                            <div class="about-four__image__shape1">
+                                <img src="{{'assets/images/shapes/about-4-shape-1.png'|theme}}" alt="kidearn" />
+                            </div>
+                            <div class="about-four__image__one kidearn-tilt"
+                                data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 3, "speed": 700, "scale": 1 }'>
+                                <img src="{{'assets/images/resources/about-4-1.jpg'|theme}}" alt="kidearn" />
+                                <div class="about-four__image__one-bottom"></div>
+                            </div>
+                            <div class="about-four__image__two wow fadeInUp" data-wow-delay="500ms">
+                                <img src="{{'assets/images/resources/about-4-2.jpg'|theme}}" alt="kidearn" />
+                            </div>
+                            <div class="about-four__image__bg-shape">
+                                <img src="{{'assets/images/shapes/about-4-shape-2.png'|theme}}" alt="kidearn" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
+                        <div class="about-four__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">About Us</h6>
+
+                                <h3 class="sec-title__title">Welcome to Pamperme</h3>
+                            </div>
+                            <p class="about-four__content__text">
+                                Spread over two floors, our beautiful spa offer a soothing environment in which you can
+                                rest, relax and feel competely rejuvenated.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. remaining
+                                essentially unchanged.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="program-three program-three--home-four">
+            {% partial 'OurService'%}
+        </section>
+        <section class="testimonial-four">
+            {% partial 'Review'%}
+        </section>
+        <section class="gallery-one gallery-one--home-three">
+            <div class="sec-title text-center">
+	
+                <h6 class="sec-title__tagline">Our Gallery</h6><!-- /.sec-title__tagline -->
+                
+                <h3 class="sec-title__title">Ultimate Relaxation Anywhere!</h3><!-- /.sec-title__title -->
+            </div>
+            {%partial 'Gallery'%}
+         </section>
+        <section class="contact-one">
+          {%partial 'Contact'%}
+        </section>
+        <section class="contact-info-one" style="margin-bottom: 54px!important;">
+            {%partial 'ContactInfo'%}
+        </section>
+        <section class="contact-map">
+            <div class="container-fluid">
+                <div>
+          <iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1673461786195!2d115.2308323741534!3d-8.675630788322499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f6f617de37%3A0xaf8cab6174316185!2sPamper%20Me%20Bali!5e0!3m2!1sid!2sid!4v1696425899384!5m2!1sid!2sid" style="height: 95vh; width: 100%;" allowfullscreen=""></iframe>
+        </div>
+        <!-- /.google-map -->
+            </div><!-- /.container-fluid -->
+        </section>
+        {%partial 'Footer'%}
+    </div><!-- /.page-wrapper -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="/" aria-label="logo image">Pamperme Bali</a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@kidearn.com">needhelp@kidearn.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="kidearn-btn kidearn-btn--base">
+                    <span><i class="icon-search"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </a>
+</body>

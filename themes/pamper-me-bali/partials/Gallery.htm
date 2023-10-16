@@ -1,0 +1,65 @@
+    <div class="container">
+        <div class="gallery-one__carousel kidearn-owl__carousel kidearn-owl__carousel--basic-nav owl-carousel owl-theme owl-loaded owl-drag"
+            data-owl-options="{
+			&quot;items&quot;: 5,
+			&quot;margin&quot;: 20,
+			&quot;loop&quot;: true,
+			&quot;smartSpeed&quot;: 700,
+			&quot;nav&quot;: false,
+			&quot;navText&quot;: [&quot;<span class=\&quot;fa fa-angle-left\&quot;></span>&quot;,&quot;<span class=\&quot;fa fa-angle-right\&quot;></span>&quot;],
+			&quot;dots&quot;: false,
+			&quot;autoplay&quot;: true,
+			&quot;responsive&quot;: {
+				&quot;0&quot;: {
+					&quot;items&quot;: 1
+				},
+				&quot;576&quot;: {
+					&quot;items&quot;: 2
+				},
+				&quot;767&quot;: {
+					&quot;items&quot;: 3
+				},
+				&quot;992&quot;: {
+					&quot;items&quot;: 4
+				},
+				&quot;1300&quot;: {
+					&quot;items&quot;: 5
+				}
+			}
+		}">
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+            <!-- /.item -->
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage"
+                    style="transform: translate3d(-1908px, 0px, 0px); transition: all 0.7s ease 0s; width: 6042px;">
+                    {% for image in gallery[0].gallery %}
+                    <div class="owl-item" style="width: 298px; margin-right: 20px;">
+                        <div class="item">
+                            <div class="gallery-one__card">
+                                <img src="{{image.path}}" alt="{{image.path}}" style="height: 20rem; object-fit:cover">
+                                <div class="gallery-one__card__hover">
+                                    <a href="{{image.path}}" class="img-popup">
+                                        <span class="gallery-one__card__icon"></span>
+                                    </a>
+                                </div><!-- /.gallery-one__card__hover -->
+                            </div><!-- /.gallery-one__card -->
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"
+                    aria-label="carousel button"><span class="fa fa-angle-left"></span></button><button type="button"
+                    role="presentation" class="owl-next" aria-label="carousel button"><span
+                        class="fa fa-angle-right"></span></button></div>
+            <div class="owl-dots disabled"></div>
+        </div><!-- /.gallery-one__carousel -->
+    </div><!-- /.container-fluid -->

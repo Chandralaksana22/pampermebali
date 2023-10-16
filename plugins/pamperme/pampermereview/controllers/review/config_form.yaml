@@ -1,0 +1,10 @@
+name: Review
+form: $/pamperme/pampermereview/models/review/fields.yaml
+modelClass: Pamperme\PampermeReview\Models\Review
+defaultRedirect: pamperme/pampermereview/review
+create:
+    redirect: 'pamperme/pampermereview/review/update/:id'
+    redirectClose: pamperme/pampermereview/review
+update:
+    redirect: pamperme/pampermereview/review
+    redirectClose: pamperme/pampermereview/review

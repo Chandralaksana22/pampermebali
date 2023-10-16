@@ -1,0 +1,14 @@
+fields:
+    tittle:
+        label: Tittle
+        span: full
+        type: text
+    gallery:
+        label: 'File upload'
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
